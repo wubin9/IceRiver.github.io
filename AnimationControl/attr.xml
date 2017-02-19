@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="animationView">
+        <!-- 要播放的图片资源 -->
+        <attr name="img" format="reference" />
+        <!-- 播放时间间隔 -->
+        <attr name="duration" format="integer" />
+        <!-- 图片行数 -->
+        <attr name="row_number" format="integer" />
+        <!-- 图片列数 -->
+        <attr name="column_number" format="integer" />
+        <!-- ture为正向播放图片，false为反向播放图片 -->
+        <attr name="positive" format="boolean" />
+        <!-- ture为播放一行图片，false为播放全部图片 -->
+        <attr name="row_unit" format="boolean" />
+        <!-- 当前播放的动画所在的行数 -->
+        <attr name="play_row" format="integer" />
+        <!-- 小于等于0为循环播放 -->
+        <attr name="repeat_count" format="integer" />
+        <!-- 非循环播放之后的响应；无效果 、不可见、隐藏-->
+        <attr name="play_after">
+            <flag name="visible" value="0" />
+            <flag name="invisible" value="1" />
+            <flag name="gone" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>
